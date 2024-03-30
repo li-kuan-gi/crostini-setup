@@ -21,3 +21,9 @@ curl https://raw.githubusercontent.com/li-kuan-gi/crostini-setup/master/java.sh 
 ```sh
 curl https://raw.githubusercontent.com/li-kuan-gi/crostini-setup/master/python.sh | bash
 ```
+
+## Rust
+
+```sh
+curl https://raw.githubusercontent.com/li-kuan-gi/crostini-setup/master/rust.sh | bash
+```
