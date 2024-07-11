@@ -14,8 +14,9 @@
 	sudo apt update
 	sudo apt install -y code
 
-    # Install Vim
+    # Install extensions
 	code --install-extension vscodevim.vim
+ 	code --install-extension bierner.markdown-mermaid
 
 	# Edit basic settings
     mkdir -p ~/.config/Code/User/
@@ -27,9 +28,9 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.action.showHover",
-        "when": "editorTextFocus"
+        "key": "alt+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
     }
 ]' >> ~/.config/Code/User/keybindings.json
 
