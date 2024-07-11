@@ -25,11 +25,6 @@
         "key": "ctrl+k ctrl+i",
         "command": "editor.action.showHover",
         "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k ctrl+i",
-        "command": "-editor.action.showHover",
-        "when": "editorTextFocus"
     }
 ]' >> ~/.config/Code/User/keybindings.json
 
