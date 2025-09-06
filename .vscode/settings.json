@@ -1,16 +1,37 @@
 // user setting
 {
     "window.zoomLevel": 2,
-    "window.restoreFullscreen": true,
     "window.restoreWindows": "none",
-    "workbench.startupEditor": "none",
     "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
+    "window.title": "${rootName}${separator}${profileName}",
+    "workbench.startupEditor": "none",
     "workbench.layoutControl.enabled": false,
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
     "editor.minimap.enabled": false,
     "vim.foldfix": true,
     "vim.handleKeys": {
-        "<C-k>": false
+        "<C-b>": false,
+        "<C-j>": false,
+        "<C-k>": false,
     },
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {"before": ["<C-e>"], "commands": ["scrollLineDown"]},
+        {"before": ["<C-y>"], "commands": ["scrollLineUp"]},
+        {"before": ["<C-d>"], "commands": ["scrollPageDown"]},
+        {"before": ["<C-u>"], "commands": ["scrollPageUp"]},
+        {
+            "before": ["<leader>", "g", "r"],
+            "commands": ["editor.action.goToReferences",]
+        },
+        {
+            "before": ["<leader>", "g", "i"],
+            "commands": ["editor.action.goToImplementation"]
+        },
+        {
+            "before": ["<leader>", "q", "f"],
+            "commands": ["editor.action.quickFix"]
+        },
+    ],
 }
