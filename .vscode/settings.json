@@ -19,8 +19,8 @@
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["<C-e>"], "commands": ["scrollLineDown"]},
         {"before": ["<C-y>"], "commands": ["scrollLineUp"]},
-        {"before": ["<C-d>"], "commands": ["scrollPageDown"]},
-        {"before": ["<C-u>"], "commands": ["scrollPageUp"]},
+        {"before": ["<C-d>"], "commands": ["cursorPageDown"]},
+        {"before": ["<C-u>"], "commands": ["cursorPageUp"]},
         {
             "before": ["<leader>", "g", "r"],
             "commands": ["editor.action.goToReferences",]
