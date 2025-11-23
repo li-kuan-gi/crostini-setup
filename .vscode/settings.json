@@ -10,11 +10,20 @@
     "workbench.activityBar.location": "hidden",
     "workbench.editor.showTabs": "single",
     "editor.minimap.enabled": false,
-    "vim.foldfix": true,
+    "editor.lineNumbers": "relative",
+    "editor.editContext": false, // 避免 vscodevim 在中文或日文輸入法選字時，重複原本的字以及覆蓋先前的字
+    "terminal.integrated.stickyScroll.enabled": false,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/target": true,
+    },
     "vim.handleKeys": {
         "<C-b>": false,
         "<C-j>": false,
         "<C-k>": false,
+        "<C-p>": false,
     },
     "vim.normalModeKeyBindingsNonRecursive": [
         {"before": ["<C-e>"], "commands": ["scrollLineDown"]},
@@ -33,5 +42,22 @@
             "before": ["<leader>", "q", "f"],
             "commands": ["editor.action.quickFix"]
         },
+    ],
+    "background.fullscreen": {
+        "images": [
+            "file:///home/user/wallpaper.jpg"
+        ],
+        "opacity": 0.3,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
+    },
+    "python.analysis.typeCheckingMode": "strict",
+    "java.autobuild.enabled": false,
+    "java.debug.settings.forceBuildBeforeLaunch": false,
+    "java.completion.guessMethodArguments": "off",
+    "java.compile.nullAnalysis.nonnull": [
+        "lombok.NonNull",
     ],
 }
